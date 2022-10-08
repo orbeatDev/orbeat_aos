@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Orbeat"
+include ':app'
+include ':core'
+include ':core-ui'
+include ':onboarding'
+include ':onboarding:onboarding_presentation'
+include ':onboarding:onboarding_domain'
+include ':explore'
+include ':explore:explore_data'
+include ':explore:explore_domain'
+include ':explore:explore_presentation'
