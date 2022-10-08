@@ -34,9 +34,6 @@ jobs:
 
             - name: Change gradlew permissions
               run: chmod +x ./gradlew
-              
-            - name: Run Tests
-              run: ./gradlew test
 
             - name: Build debug APK
               run: ./gradlew assembleDebug --stacktrace
